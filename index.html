@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lazyload</title>
+    <style>
+      .container1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      .container1 img {
+        border-radius: 10px;
+        width: 600px;
+        height: 400px;
+        transition: opacity 0.5s ease;
+      }
+      .lazyload {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9990/993333/600x400.png"
+      />
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9991/993333/600x400.png"
+      />
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9992/993333/600x400.png"
+      />
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9993/993333/600x400.png"
+      />
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9994/993333/600x400.png"
+      />
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9995/993333/600x400.png"
+      />
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9996/993333/600x400.png"
+      />
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9997/993333/600x400.png"
+      />
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9998/993333/600x400.png"
+      />
+      <img
+        class="lazyload"
+        data-sizes="auto"
+        data-src="https://placehold.jp/24/cc9919/993333/600x400.png"
+      />
+    </div>
+
+    <!-- یا این -->
+    <script src="./lazyload-remasted.js"></script>
+    <script>
+      lazyload();
+    </script>
+    <!-- تا اینجا -->
+
+
+    <!-- یا این یکی -->
+    <!-- <script src="./lazysizes.min.js"></script> -->
+  </body>
+</html>
